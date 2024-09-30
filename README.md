@@ -76,6 +76,72 @@ The project is organized as follows:
    - **Task 2**: Lists individuals who completed specified trainings during the fiscal year (July 1, 2023, to June 30, 2024).
    - **Task 3**: Identifies individuals with trainings that have expired or will expire soon.
 3. **Output**: The results are saved as JSON files in the same directory as the input file for easy access.
+## Output Formats
+The application generates output in the following formats:
+
+1. **Count of People Completed Trainings**: 
+   - **File**: `CountOfPeopleCompletedTrainings.json`
+   - **Description**: This file lists each training along with the number of unique individuals who have completed it.
+   - **Sample Output**:
+     ```json
+     [
+       {
+         "training": "Electrical Safety for Labs",
+         "count": 118
+       },
+       {
+         "training": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+         "count": 99
+       }
+     ]
+     ```
+
+2. **People Completed Trainings Given Year**:
+   - **File**: `PeopleCompletedTrainingsFiscalYear.json`
+   - **Description**: This file contains a list of individuals who completed specific trainings within the defined fiscal year (2024).
+   - **Sample Output**:
+     ```json
+     [
+       {
+         "training": "Electrical Safety for Labs",
+         "fiscalYear": 2024,
+         "people": ["Allie Barnes", "Brogan Stein", "Lexie Ho"]
+       },
+       {
+         "training": "X-Ray Safety",
+         "fiscalYear": 2024,
+         "people": ["Asia Duke", "Anabelle Braun", "Cloe Williamson"]
+       }
+     ]
+     ```
+
+3. **People Completed Expired Trainings**:
+   - **File**: `PeopleCompletedExpiredTrainings.json`
+   - **Description**: This file identifies individuals with trainings that have expired or will expire soon.
+   - **Sample Output**:
+     ```json
+     [
+       {
+         "name": "Lexie Mckinney",
+         "expiredTrainings": [
+           {
+             "training": "IRB Quiz",
+             "status": "Expired"
+           }
+         ]
+       },
+       {
+         "name": "Gretchen Boyer",
+         "expiredTrainings": [
+           {
+             "training": "Safe Handling of Human Cell Lines/Materials in a Research Laboratory",
+             "status": "Expired"
+           }
+         ]
+       }
+     ]
+     ```
+
 
 ## Contributions
 Contributions to this project are welcome! You can help improve it by:
