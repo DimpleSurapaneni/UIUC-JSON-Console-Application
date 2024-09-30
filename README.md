@@ -57,16 +57,31 @@ Before you begin, ensure you have the following:
 ## Project Structure
 The project is organized as follows:
  ```bash
-     UIUC-JSON-Console-Application/
-│
-├── Program.cs                  # Main application logic
-├── models/                     # Contains data models
-│   ├── Person.cs               # Model representing a person
-│   └── TrainingCompletion.cs    # Model representing a training completion
-├── trainings.txt               # Input JSON file with training data
-├── CountOfPeopleCompletedTrainings.json  # Output for Task 1
-├── PeopleCompletedTrainingsFiscalYear.json  # Output for Task 2
-├── PeopleCompletedExpiredTrainings.json     # Output for Task 3
-└── UIUC-JSON-Console-Application.csproj    # Project file
+   UIUC-JSON-Console-Application/
+   │
+   ├── Program.cs                  # Main application logic
+   ├── models/                     # Contains data models
+   │   ├── Person.cs               # Model representing a person
+   │   └── TrainingCompletion.cs    # Model representing a training completion
+   ├── trainings.txt               # Input JSON file with training data
+   ├── CountOfPeopleCompletedTrainings.json  # Output for Task 1
+   ├── PeopleCompletedTrainingsFiscalYear.json  # Output for Task 2
+   ├── PeopleCompletedExpiredTrainings.json     # Output for Task 3
+   └── UIUC-JSON-Console-Application.csproj    # Project file
+```
+## How It Works
+1. **Input**: The application reads the `trainings.txt` file for training completion data.
+2. **Processing**: It processes the data through three main tasks:
+   - **Task 1**: Counts unique completions for each training and saves this information.
+   - **Task 2**: Lists individuals who completed specified trainings during the fiscal year (July 1, 2023, to June 30, 2024).
+   - **Task 3**: Identifies individuals with trainings that have expired or will expire soon.
+3. **Output**: The results are saved as JSON files in the same directory as the input file for easy access.
 
-     ```
+## Contributions
+Contributions to this project are welcome! You can help improve it by:
+1. Forking the repository.
+2. Creating a new branch for your feature (`git checkout -b feature-branch`).
+3. Making your changes and committing them (`git commit -m 'Add your feature'`).
+4. Pushing to the branch (`git push origin feature-branch`).
+5. Opening a pull request for review.
+
