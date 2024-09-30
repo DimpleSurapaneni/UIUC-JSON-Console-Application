@@ -23,7 +23,7 @@ Before you begin, ensure you have the following:
    git clone https://github.com/DimpleSurapaneni/UIUC-JSON-Console-Application.git
    cd UIUC-JSON-Console-Application
 
-###OR
+### OR
 
 1. **Open the Project**:
    - Launch Visual Studio.
@@ -36,3 +36,24 @@ Before you begin, ensure you have the following:
        ```powershell
        dotnet restore
        ```
+## Usage
+
+1. **Input File**: 
+   - Ensure the `trainings.txt` JSON file is located in the user's **Downloads** folder.
+   - Alternatively, update the file path in the code to point to the actual location of `trainings.txt`.
+
+2. **Run the Application**:
+   - Open a terminal in the project directory.
+   - Execute the following command to build and run the application:
+     ```bash
+     dotnet run
+     ```
+
+3. **Check the Output Files**:
+   - After the application has completed execution, the following output files will be generated in the same directory as the input file:
+     - **CountOfPeopleCompletedTrainings.json**: Lists the number of unique individuals who completed each training.
+     - **PeopleCompletedTrainingsFiscalYear.json**: Lists individuals who completed specified trainings during the fiscal year 2024.
+     - **PeopleCompletedExpiredTrainings.json**: Identifies individuals whose trainings have expired or will expire soon.
+## Project Structure
+The project is organized as follows:
+UIUC-JSON-Console-Application/ │ ├── Program.cs # Main application logic ├── models/ # Contains data models │ ├── Person.cs # Model representing a person │ └── TrainingCompletion.cs # Model representing a training completion ├── trainings.txt # Input file with training data ├── CountOfPeopleCompletedTrainings.json # Output for Task 1 ├── PeopleCompletedTrainingsFiscalYear.json # Output for Task 2 ├── PeopleCompletedExpiredTrainings.json # Output for Task 3 └── UIUC-JSON-Console-Application.csproj # Project file
