@@ -23,7 +23,7 @@ Before you begin, ensure you have the following:
    git clone https://github.com/DimpleSurapaneni/UIUC-JSON-Console-Application.git
    cd UIUC-JSON-Console-Application
 
-##OR
+###OR
 
 1. **Open the Project**:
    - Launch Visual Studio.
