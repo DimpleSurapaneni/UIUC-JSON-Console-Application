@@ -11,7 +11,7 @@ namespace UIUC_JSON_Console_Application
     {
         static void Main(string[] args)
         {
-          
+          //Please Change the file Path accordingly
             string jsonFile = @"C:\Users\dimpl\OneDrive\Desktop\GIT Projects\UIUC JSON Console Application\trainings.txt";
 
             string jsonData = File.ReadAllText(jsonFile);
