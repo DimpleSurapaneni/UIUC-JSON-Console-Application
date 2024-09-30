@@ -56,4 +56,17 @@ Before you begin, ensure you have the following:
      - **PeopleCompletedExpiredTrainings.json**: Identifies individuals whose trainings have expired or will expire soon.
 ## Project Structure
 The project is organized as follows:
-UIUC-JSON-Console-Application/ │ ├── Program.cs # Main application logic ├── models/ # Contains data models │ ├── Person.cs # Model representing a person │ └── TrainingCompletion.cs # Model representing a training completion ├── trainings.txt # Input file with training data ├── CountOfPeopleCompletedTrainings.json # Output for Task 1 ├── PeopleCompletedTrainingsFiscalYear.json # Output for Task 2 ├── PeopleCompletedExpiredTrainings.json # Output for Task 3 └── UIUC-JSON-Console-Application.csproj # Project file
+ ```bash
+     UIUC-JSON-Console-Application/
+│
+├── Program.cs                  # Main application logic
+├── models/                     # Contains data models
+│   ├── Person.cs               # Model representing a person
+│   └── TrainingCompletion.cs    # Model representing a training completion
+├── trainings.txt               # Input JSON file with training data
+├── CountOfPeopleCompletedTrainings.json  # Output for Task 1
+├── PeopleCompletedTrainingsFiscalYear.json  # Output for Task 2
+├── PeopleCompletedExpiredTrainings.json     # Output for Task 3
+└── UIUC-JSON-Console-Application.csproj    # Project file
+
+     ```
