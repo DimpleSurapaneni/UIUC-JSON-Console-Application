@@ -40,7 +40,7 @@ Before you begin, ensure you have the following:
 
 1. **Input File**: 
    - Ensure the `trainings.txt` JSON file is located in the user's **Downloads** folder.
-   - Alternatively, update the file path in the code to point to the actual location of `trainings.txt`.
+   - Alternatively, update the file path in the code to point to the actual location of `trainings.txt` as per your setup if necessary.
 
 2. **Run the Application**:
    - Open a terminal in the project directory.
