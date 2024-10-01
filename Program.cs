@@ -15,14 +15,13 @@ namespace UIUC_JSON_Console_Application
             string jsonFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "UIUC-JSON-Console-Application-main", "trainings.txt");
             Console.WriteLine(jsonFile);
 
-            // Check if the file exists before proceeding
+            
             if (!File.Exists(jsonFile))
             {
                 Console.WriteLine("File not found: {0}", jsonFile);
                 return;
             }
 
-            // Read JSON data
             string jsonData = File.ReadAllText(jsonFile);
             var people = JsonConvert.DeserializeObject<List<Person>>(jsonData);
 
@@ -30,7 +29,6 @@ namespace UIUC_JSON_Console_Application
             string outputDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "Downloads", "UIUC-JSON-Console-Application-main");
             Console.WriteLine(outputDirectory);
 
-            // Ensure output directory exists
             if (!Directory.Exists(outputDirectory))
             {
                 Directory.CreateDirectory(outputDirectory);
